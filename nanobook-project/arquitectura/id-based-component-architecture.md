@@ -1,13 +1,11 @@
 ---
-title: Arquitectura de componentes basada en IDs
-description: Resumen de la arquitectura de componentes del SidebarNav y
-  TableOfContents de nanobook, basada en IDs del DOM.
-date: 2026-08-06T00:00:00.000Z
-author: Nanobook
+title: "Arquitectura de componentes basada en IDs"
+description: "Resumen de la arquitectura de componentes del SidebarNav y TableOfContents de nanobook, basada en IDs del DOM."
+date: 2026-08-06
+author: "Nanobook"
 tags: []
 draft: false
 index: false
-position: 0
 ---
 
 # Arquitectura de componentes basada en IDs
@@ -80,8 +78,8 @@ Tanto `SidebarNav` como `TableOfContents` definen IDs fijos en su componente ra�
 
 ## Documentación específica
 
-- [`sidebar-architecture.md`](../nanobook-project/interfaz/sidebar/sidebar-architecture): estructura, contratos de IDs y flujo de datos del `SidebarNav`.
-- [`toc-architecture.md`](../nanobook-project/interfaz/tabla-de-contenidos/toc-architecture): estructura, scrollSpy, eventos custom y contratos de IDs del `TableOfContents`.
+- [`sidebar-architecture.md`](../interfaz/sidebar/sidebar-architecture): estructura, contratos de IDs y flujo de datos del `SidebarNav`.
+- [`toc-architecture.md`](../interfaz/tabla-de-contenidos/toc-architecture): estructura, scrollSpy, eventos custom y contratos de IDs del `TableOfContents`.
 
 ## Fortalezas
 

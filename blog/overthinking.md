@@ -7,7 +7,7 @@ tags: []
 draft: false
 ---
 
-# 🤯 Sobrepensar
+# 🤯 Sobrepensar 1.0
 
 ## La necesidad de encontrar soluciones a problemas que no existen
 
