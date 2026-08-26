@@ -8,6 +8,8 @@ draft: false
 index: false
 ---
 
+v1.0
+
 # Guía de Markdown
 
 Nanobook usa Markdown como formato principal para el contenido. Esta guía recoge la sintaxis que puedes utilizar y las convenciones específicas del proyecto.
