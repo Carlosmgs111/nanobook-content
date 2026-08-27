@@ -8,7 +8,7 @@ draft: false
 index: false
 ---
 
-v6.0
+v7.0
 
 # Guía de Markdown
 
