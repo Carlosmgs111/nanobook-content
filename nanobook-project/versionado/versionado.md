@@ -8,7 +8,7 @@ draft: false
 index: false
 ---
 
-v3.0
+v4.0
 
 # Versionado de nanobook
 
