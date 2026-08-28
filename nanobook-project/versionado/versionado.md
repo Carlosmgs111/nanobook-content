@@ -8,6 +8,8 @@ draft: false
 index: false
 ---
 
+v1.0
+
 # Versionado de nanobook
 
 ## 1. Objetivo
