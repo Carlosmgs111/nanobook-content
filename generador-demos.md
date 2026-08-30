@@ -8,7 +8,7 @@ draft: false
 index: false
 ---
 
-# Generador Automatizado de Demos en Vídeo
+# Generador Automatizado de Demos en Vídeo v1.0
 
 ## 1. Visión General
 
