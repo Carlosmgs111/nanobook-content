@@ -7,7 +7,6 @@ author: Nanobook
 tags: []
 draft: false
 index: false
-position: 0
 ---
 
 # Arquitectura de componentes basada en IDs
