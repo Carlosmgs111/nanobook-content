@@ -10,7 +10,7 @@ position: 0
 proxyTargetId: null
 ---
 
-# Generador Automatizado de Demos en Vídeo v9.0
+# Generador Automatizado de Demos en Vídeo v10.0
 
 ## 1. Visión General
 
