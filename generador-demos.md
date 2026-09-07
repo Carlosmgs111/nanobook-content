@@ -1,7 +1,7 @@
 ---
 title: "Generador Automatizado de Demos en Vídeo"
 description: "Descripción del post."
-date: 2026-09-07T21:21:34.996Z
+date: 2026-09-07T23:07:35.517Z
 author: "Nanobook"
 tags: []
 draft: false
@@ -10,7 +10,7 @@ position: 0
 proxyTargetId: null
 ---
 
-# Generador Automatizado de Demos en Vídeo v8.0
+# Generador Automatizado de Demos en Vídeo v9.0
 
 ## 1. Visión General
 
