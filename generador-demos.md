@@ -1,11 +1,13 @@
 ---
 title: "Generador Automatizado de Demos en Vídeo"
 description: "Descripción del post."
-date: 2026-07-30
+date: 2026-07-30T00:00:00.000Z
 author: "Astro"
 tags: []
 draft: false
 index: false
+position: 0
+proxyTargetId: null
 ---
 
 # Generador Automatizado de Demos en Vídeo v4.0
