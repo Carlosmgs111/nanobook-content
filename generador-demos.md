@@ -1,7 +1,7 @@
 ---
 title: "Generador Automatizado de Demos en Vídeo"
 description: "Descripción del post."
-date: 2026-09-11T19:20:28.850Z
+date: 2026-09-11T19:20:56.438Z
 author: "Nanobook"
 tags: []
 draft: false
