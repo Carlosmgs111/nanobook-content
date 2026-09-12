@@ -8,7 +8,3 @@ draft: false
 index: true
 position: 50
 ---
-
-## Proyectos
-
-- [Generador automatizado de demos en vídeo](./generador-demos) — sistema serverless para generar videos de demostración desde releases de GitHub.

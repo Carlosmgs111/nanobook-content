@@ -14,6 +14,8 @@ index: false
 position: 0
 ---
 
+v1.0
+
 # Sistema de cacheo
 
 Nanobook usa cuatro capas de cacheo superpuestas. Cada una resuelve un problema diferente y tiene su propio tiempo de vida, clave y mecanismo de invalidacion. Entender el flujo completo permite diagnosticar por que un cambio tarda en verse o por que una peticion falla con rate limit de GitHub.

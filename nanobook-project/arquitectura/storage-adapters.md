@@ -17,33 +17,54 @@ El dominio de Nanobook no sabe si los documentos vienen de Markdown, PostgreSQL,
                        │
         ┌──────────────┼──────────────┐
         │              │              │
- AstroCollection   MemoryRepository  DatabaseRepository
+ FileSystemRepository MemoryRepository DatabaseRepository
       │                   │                  │
-   Astro glob           Document[]         PostgreSQL
-   + GitHub loader                        (futuro)
+   src/content/        Document[]         PostgreSQL
+                                                 
+ GitHubRepository
+      │
+ GitHub API (read + write)
 ```
 
 ## Adapters actuales
 
-### AstroCollectionRepository
+### FileSystemRepository
 
-Ubicación: `src/document/adapters/repository/astro-collection-repository.ts`
+Ubicación: `src/document/adapters/repository/file-system-repository.ts`
 
-Implementación actual. Lee documentos desde la colección de Astro, que a su vez usa `glob` (filesystem local) o el loader `github` (contenido remoto).
+Lee documentos directamente desde `src/content/` sin depender de Astro. Es el adapter por defecto cuando `CONTENT_SOURCE` no está definida o vale `filesystem`.
 
 ```typescript
-const repository = new AstroCollectionRepository();
+const repository = new FileSystemRepository();
 const documents = await repository.list();
 ```
 
-Internamente:
+Internamente escanea archivos `.md`, parsea el frontmatter y construye objetos `Document`.
 
-1. Llama a `getAstroEntries()` (`src/document/adapters/cache/astro-cache.ts`) para obtener un `Map<id, Astro entry>`.
-2. Construye un `CompositeReferenceResolver` para soportar referencias `ref`.
-3. Filtra `draft: true`.
-4. Mapea cada entrada a `Document` mediante `toDocument()` o `resolveProxy()`.
+### GitHubRepository
 
-Ver [Arquitectura del modelo de contenido](./content-model-architecture#flujo-de-carga-y-mapeo) para el flujo completo.
+Ubicación: `src/document/adapters/repository/github-repository.ts`
+
+Lee documentos Markdown desde un repositorio de GitHub remoto. Se activa con `CONTENT_SOURCE=github` y las variables de entorno `GITHUB_OWNER`, `GITHUB_REPO`, `GITHUB_BRANCH`, `GITHUB_TOKEN` y `GITHUB_PATH`.
+
+Además de `list()`, `get()` y `listChildren()`, implementa `save(document)` usando la [GitHub Contents API](https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#create-or-update-file-contents):
+
+1. Calcula la ruta del archivo dentro del repo a partir del `id` del documento y del `path` base configurado.
+2. Obtiene el `sha` actual del archivo mediante `GET /repos/{owner}/{repo}/contents/{path}`.
+3. Envía un `PUT` con el contenido codificado en base64, el mensaje de commit y el `sha` cuando el archivo ya existe (omite el `sha` para crear uno nuevo).
+4. Invalida el cache de documentos para que la siguiente lectura refleje el cambio.
+
+```typescript
+const repository = new GitHubRepository({
+  owner: "usuario",
+  repo: "nanobook-content",
+  branch: "main",
+  token: process.env.GITHUB_TOKEN,
+  path: "docs",
+});
+
+await repository.save(document);
+```
 
 ### MemoryRepository
 
@@ -109,7 +130,8 @@ Esto es clave para mantener el dominio storage-agnostic. La construcción del á
 
 ## Estado
 
-- ✅ `AstroCollectionRepository` implementado y en uso.
+- ✅ `FileSystemRepository` implementado y en uso como adapter por defecto.
+- ✅ `GitHubRepository` implementado para lectura y escritura desde GitHub.
 - ✅ `MemoryRepository` implementado para tests/desarrollo.
 - ⏳ `DatabaseRepository` como stub; se implementará cuando se añada el SaaS.
 
