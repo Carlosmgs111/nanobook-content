@@ -10,4 +10,4 @@ position: 0
 proxyTargetId: null
 ---
 
-# SUB 2 v3.0
+# SUB 2 v6.0
