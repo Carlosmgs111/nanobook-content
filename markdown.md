@@ -1,16 +1,16 @@
 ---
-title: Arquitectura de componentes basada en IDs
-description: Resumen de la arquitectura de componentes del SidebarNav y
-  TableOfContents de nanobook, basada en IDs del DOM.
+title: "Arquitectura de componentes basada en IDs"
+description: "Resumen de la arquitectura de componentes del SidebarNav y TableOfContents de nanobook, basada en IDs del DOM."
 date: 2026-08-06T00:00:00.000Z
-author: Nanobook
+author: "Nanobook"
 tags: []
 draft: false
 index: false
 position: 0
+proxyTargetId: null
 ---
 
-# Arquitectura de componentes basada en IDs
+# Arquitectura de componentes basada en IDs 1.0
 
 ## Resumen
 
