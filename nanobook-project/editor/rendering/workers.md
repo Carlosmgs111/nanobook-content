@@ -1,4 +1,5 @@
 ---
+id: "b4fc6ff3-321c-4956-92cf-8162838bf1cc"
 title: "Workers de renderizado"
 description: "Cómo funciona la capa de workers: MarkdownRenderClient, el worker work.ts y la comunicación con el hilo principal."
 date: 2026-08-22

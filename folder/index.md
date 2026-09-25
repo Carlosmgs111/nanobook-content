@@ -1,4 +1,5 @@
 ---
+id: "5a866eed-6073-41ec-a402-495995eaac93"
 title: "Folder"
 description: "Articles and reflections."
 date: 2026-07-30

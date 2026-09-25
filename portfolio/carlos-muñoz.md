@@ -1,4 +1,5 @@
 ---
+id: "fae09cd6-676d-4803-82d4-6331b8abb84e"
 title: "Carlos Muñoz Gachancipá"
 description: "Curriculum vitae de Carlos Muñoz Gachancipá."
 date: 2026-07-30

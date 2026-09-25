@@ -1,4 +1,5 @@
 ---
+id: "9c7fa6a9-6e29-455b-886b-7beabbaa6a73"
 title: "Plan de transición a SSR puro"
 description: "Plan por fases para eliminar el modo híbrido estático/dinámico y consolidar Nanobook como aplicación server-first"
 date: 2026-08-25

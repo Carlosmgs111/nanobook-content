@@ -1,4 +1,5 @@
 ---
+id: "ceb05e2d-bd22-4960-a002-cad15f1b0193"
 title: "Roadmap"
 description: "Plan de desarrollo de Nanobook: estado actual, mejoras inmediatas, próximas features e ideas futuras."
 date: 2026-08-21

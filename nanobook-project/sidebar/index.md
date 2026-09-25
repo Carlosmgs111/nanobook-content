@@ -1,4 +1,5 @@
 ---
+id: "93dc097e-7083-446c-8bc2-8ac96b5249e0"
 title: "Sidebar"
 description: "Arquitectura, comportamiento y plan de componetización del SidebarNav."
 date: 2026-08-13

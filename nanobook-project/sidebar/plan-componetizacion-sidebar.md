@@ -1,4 +1,5 @@
 ---
+id: "23e119e0-fdf4-43fc-aa68-c0017e1f358a"
 title: "Plan de componetización del SidebarNav"
 description: "Propuesta para aplicar SOLID al componente SidebarNav de nanobook usando componentes autocontenidos con lógica co-localizada en archivos .logic.ts."
 date: 2026-08-06

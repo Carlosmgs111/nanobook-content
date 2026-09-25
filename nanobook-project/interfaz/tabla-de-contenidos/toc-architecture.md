@@ -1,4 +1,5 @@
 ---
+id: "af7cb8d0-05d7-45aa-a0cc-3075cfa4c638"
 title: "Arquitectura del TableOfContents (TOC)"
 description: "Resumen del TableOfContents (TOC) de nanobook"
 date: 2026-08-06

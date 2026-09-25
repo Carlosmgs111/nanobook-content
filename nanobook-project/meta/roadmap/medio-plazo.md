@@ -1,4 +1,5 @@
 ---
+id: "08a61764-f823-4628-ace6-9a720521ba94"
 title: "Medio plazo"
 description: "Features próximas que consolidan Nanobook como producto de documentación técnica."
 date: 2026-08-21

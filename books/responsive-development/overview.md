@@ -1,4 +1,5 @@
 ---
+id: "11f38f96-d687-483c-9dc1-91602a7d4f73"
 title: "Overview"
 description: "Overview of the adaptable architecture template."
 date: 2026-07-30

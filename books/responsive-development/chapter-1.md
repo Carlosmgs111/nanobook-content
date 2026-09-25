@@ -1,4 +1,5 @@
 ---
+id: "a70be9a8-3684-4ad6-8a94-9a1aaaaa781b"
 title: "Guía completa de elementos Markdown"
 description: "Capítulo de referencia que incluye todos los elementos renderizables de Markdown para experimentar con el diseño."
 date: 2026-07-30

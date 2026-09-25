@@ -1,4 +1,5 @@
 ---
+id: "d0021a7a-cc3a-410f-8d1b-1dc425aa5553"
 title: "Flujo de edición y preview"
 description: "Cómo funciona el ciclo editor → preview en Nanobook, incluyendo el uso de workers para renderizar Markdown sin bloquear la UI."
 date: 2026-08-19
@@ -185,6 +186,21 @@ No son persistentes entre sesiones porque la edición es un borrador temporal; e
 - **Renders obsoletos sobreescribiendo `sessionStorage`**: si un render anterior terminaba después de uno más reciente, podía dejar el preview desactualizado. El servicio de renderizado verifica que el `stagedDocument` de `sessionStorage` siga siendo el mismo que se renderizó antes de escribir el resultado.
 - **Preview vacío si se navegaba antes de que terminara el debounce**: si el usuario hacía click en preview dentro del segundo de debounce, el render nunca se iniciaba. Ahora `DocumentEditor` captura el contenido actual en `astro:before-swap` y pide un render, y `preview.astro` también puede iniciar el render si es necesario.
 - **Editor mostraba siempre el mismo documento staged**: al usar una única clave global `stagedDocument`, editar cualquier documento después de haber editado otro cargaba el contenido del documento anterior. Se resolvió validando el `id` del documento staged al cargar el editor y borrando las claves de `sessionStorage` al salir del flujo de edición.
+
+## Guardado confirmado y versión en memoria
+
+En producción la invalidación del caché y la posterior publicación de la nueva versión pueden tardar. Para evitar que el usuario vea el contenido antiguo justo después de guardar, el flujo de edición distingue entre dos estados del borrador:
+
+- **Borrador sin guardar**: cambios en el editor que aún no se han persistido. El preview los muestra, pero no se usan fuera del flujo de edición.
+- **Borrador guardado confirmado**: tras un `PATCH /api/{id}` exitoso, el borrador se marca con un timestamp (`stagedDocumentSavedAt`). Mientras el usuario permanezca en el mismo documento, la página pública (`/{slug}`) prefiere el HTML renderizado en memoria sobre el cuerpo servido por el servidor, que podría corresponder aún a la versión cacheada anterior.
+
+Este comportamiento se implementa en:
+
+- `src/edition/client/stage-document.ts` — añade `markStagedDocumentAsSaved()`, `getStagedDocumentSavedAt()` y `clearStagedDocumentSavedAt()`.
+- `src/edition/client/document-flow.ts` — define `isInsideDocumentFlow(url, documentId)`, que incluye la página pública del documento además de `/edit` y `/preview`. De este modo, navegar entre estas tres vistas no borra el borrador.
+- `src/pages/[...slug]/index.astro` — en cliente, si detecta un borrador guardado confirmado para el documento actual, reemplaza el cuerpo renderizado por el servidor con el HTML que hay en `sessionStorage`.
+
+La versión en memoria se descarta cuando el usuario abandina el documento (cualquier URL que no sea `/{id}`, `/{id}/edit` o `/{id}/preview`), al cerrar la pestaña o al iniciar la edición de otro documento. Si el usuario escribe cambios nuevos sin guardar, `DocumentEditor` borra el timestamp de guardado confirmado, de modo que la página pública vuelva a confiar en el servidor hasta el próximo guardado exitoso.
 
 ## Próximos pasos
 

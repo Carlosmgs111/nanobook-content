@@ -1,4 +1,5 @@
 ---
+id: "2dcd30a7-9418-4ff1-938f-e76fd13592bc"
 title: "De classList a data attributes: estado declarativo en el TOC"
 description: "Por qué el TableOfContents de nanobook dejó de manipular clases CSS desde JavaScript para expresar estados y pasó a usar atributos de datos interpretados por CSS."
 date: 2026-08-04

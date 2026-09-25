@@ -1,4 +1,5 @@
 ---
+id: "b301634c-a361-451a-9d82-3c1750c1cfbf"
 title: "Informe de estado: arquitectura basada en IDs/referencias"
 description: "Análisis del gap entre el ideal de componentes desacoplados por referencias y la implementación actual de nanobook, con fases de refactorización propuestas."
 date: 2026-08-21

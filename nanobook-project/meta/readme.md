@@ -1,4 +1,5 @@
 ---
+id: "746d2fad-3009-4247-9101-51b1b0672955"
 title: README del proyecto
 description: "Documentación de alto nivel de Nanobook: qué hace, cómo instalarlo
   y cómo está organizado."

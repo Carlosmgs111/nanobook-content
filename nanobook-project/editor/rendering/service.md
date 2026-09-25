@@ -1,4 +1,5 @@
 ---
+id: "80a87e44-cc4f-4296-9b04-fb12724f2a6a"
 title: "Servicio de renderizado"
 description: "Cómo funciona render-service.ts: orquestación del renderizado Markdown, estado en sessionStorage y coordinación con editor y preview."
 date: 2026-08-22
@@ -37,12 +38,13 @@ ensureRendered(): Promise<RenderedDocument | null>
 
 | Clave | Contenido | Quién lo escribe | Vida |
 |---|---|---|---|
-| `stagedDocument` | `Document` con el contenido editado | `DocumentEditor` | Solo dentro del flujo edit/preview del mismo documento |
+| `stagedDocument` | `Document` con el contenido editado | `DocumentEditor` | Solo dentro del flujo del mismo documento |
+| `stagedDocumentSavedAt` | Timestamp del último guardado exitoso | `DocumentEditor` | Solo dentro del flujo del mismo documento; se borra al escribir cambios no guardados |
 | `renderPendingDocument` | `Document` en renderizado activo | `render-service.ts` | Durante el render |
-| `renderedStagedDocumentSource` | `Document` fuente del último HTML | `render-service.ts` | Solo dentro del flujo edit/preview |
-| `renderedStagedDocument` | `RenderedDocument` con HTML y headings | `render-service.ts` | Solo dentro del flujo edit/preview |
+| `renderedStagedDocumentSource` | `Document` fuente del último HTML | `render-service.ts` | Solo dentro del flujo del mismo documento |
+| `renderedStagedDocument` | `RenderedDocument` con HTML y headings | `render-service.ts` | Solo dentro del flujo del mismo documento |
 
-> **Regla de oro**: estas claves se borran al navegar fuera de `/{id}/edit` o `/{id}/preview`. Si se cierra la pestaña también desaparecen porque `sessionStorage` no sobrevive.
+> **Regla de oro**: estas claves se borran al navegar fuera de `/{id}`, `/{id}/edit` o `/{id}/preview`. Si se cierra la pestaña también desaparecen porque `sessionStorage` no sobrevive.
 
 ## Flujo interno de `renderStagedDocument`
 

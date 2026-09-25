@@ -1,4 +1,5 @@
 ---
+id: "75e53d49-dd58-4763-bcd7-282230798f4f"
 title: "Versionado de nanobook"
 description: "Estrategia de versionado y flujo de trabajo para mantener el proyecto de forma consistente usando Semantic Versioning, Conventional Commits y un CHANGELOG manual."
 date: 2026-08-09

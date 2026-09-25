@@ -1,4 +1,5 @@
 ---
+id: "272333ca-3e29-4a3d-a1ab-cc6a0dc890c5"
 title: Plan de preparación para el grafo de dependencias
 description: Roadmap de refactorización incremental para desacoplar el árbol de navegación global, modelar dependencias entre documentos y habilitar recompilado incremental en Nanobook.
 date: 2026-08-23

@@ -1,4 +1,5 @@
 ---
+id: "614cce62-40b4-4f26-aeba-3b0812a32354"
 title: "Flujo de trabajo"
 description: "Convenciones de desarrollo, versionado, commits y releases del proyecto Nanobook."
 date: 2026-08-21

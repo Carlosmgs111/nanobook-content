@@ -1,4 +1,5 @@
 ---
+id: "19eedd31-6929-4647-a33e-10c023032bf7"
 title: "Interfaz"
 description: "Subsistema de interfaz de Nanobook: layout, sidebar y tabla de contenidos."
 date: 2026-08-21

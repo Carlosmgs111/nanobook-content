@@ -1,4 +1,5 @@
 ---
+id: "336a1269-6b58-4c10-84a9-af7a682e8249"
 title: "Evolución del componente TableOfContents: rendimiento y escalabilidad"
 description: "Comparativa entre la implementación inicial del scroll spy y la solución actual optimizada, con análisis de rendimiento y posibles mejoras futuras."
 date: 2026-08-03

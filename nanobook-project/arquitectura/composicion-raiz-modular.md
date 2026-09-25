@@ -1,4 +1,5 @@
 ---
+id: "ab9031a9-efa8-4f59-9d30-dda00fe5fc06"
 title: "Composición raíz modular"
 description: "Decisión de introducir src/Application.ts como composition root y convertir los dominios en módulos con ciclo de vida explícito."
 date: 2026-09-11

@@ -1,4 +1,5 @@
 ---
+id: "8f2313fe-7fe3-4cfd-adb6-452581f57a44"
 title: "Thundering herd contra la API de GitHub"
 description: "Análisis del error 503 Backend.max_conn reached tras la refactorización modular y la solución mediante in-flight promises en GitHubRepository."
 date: 2026-09-11

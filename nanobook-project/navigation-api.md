@@ -1,4 +1,5 @@
 ---
+id: "3135648c-09c6-4d67-8435-b79d06053855"
 title: API de navegación
 description: "Punto de entrada a la documentación de NavigationBuilder:
   construcción del árbol de navegación, breadcrumbs, sidebar e índices."

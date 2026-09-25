@@ -1,4 +1,5 @@
 ---
+id: "c0a966ac-4340-4f2d-aa8d-0f6f38655cb9"
 title: "Comunicación de estado entre componentes: del TOC al layout completo"
 description: "Cómo los componentes de nanobook comparten estado mediante data attributes y localStorage, desde el scroll spy del TOC hasta la coordinación entre Sidebar, TOC y el modo de ancho de contenido."
 date: 2026-08-05

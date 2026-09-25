@@ -1,4 +1,5 @@
 ---
+id: "b7763452-2af5-44a7-8543-f6dba91fe8a2"
 title: "Refactorización del grafo de dependencias"
 description: "Decisión de mover DocumentsGraph a navigation y de calcular invalidatedIds a través del grafo en lugar de invalidar directamente los IDs recibidos."
 date: 2026-09-11

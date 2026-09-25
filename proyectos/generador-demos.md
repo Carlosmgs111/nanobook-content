@@ -1,4 +1,5 @@
 ---
+id: "2f98e293-bd5b-4190-bad0-681816cb921b"
 title: "Generador Automatizado de Demos en Vídeo"
 description: "Descripción del post."
 date: 2026-07-30

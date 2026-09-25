@@ -1,4 +1,5 @@
 ---
+id: "afa95f11-710a-462a-a631-c83d274d78c1"
 title: "Sistema de cacheo"
 description: "Flujo de ejecucion y capas de cacheo de Nanobook: CDN, Redis, memoria y GitHub."
 date: 2026-08-26
@@ -165,8 +166,8 @@ Usuario -> GET /markdown
 
 9. Para cada archivo:
    -> fetchFileContent() descarga desde raw.githubusercontent.com (sin rate limit de API).
-   -> createParsedEntry() parsea frontmatter.
-   -> buildDocument() construye Document.
+    -> createDocumentFromRaw() parsea frontmatter y construye Document.
+
 
 10. resolveProxies(documents) resuelve referencias ref si las hay.
 

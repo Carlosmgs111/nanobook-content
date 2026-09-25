@@ -1,4 +1,5 @@
 ---
+id: "e60dffe2-1fad-40c3-9933-9ea6d0d3399b"
 title: "Plan de implementación — Fase 7: ISR isomórfico con cache abstracto"
 description: "Plan de implementación — Fase 7: ISR isomórfico con cache abstracto"
 date: 2026-08-23

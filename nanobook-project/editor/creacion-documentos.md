@@ -1,4 +1,5 @@
 ---
+id: "2a3eec8f-b9e8-4b06-af3b-10c5b3a2aff8"
 title: "Creación de documentos"
 description: "Decisión e implementación del flujo para crear nuevos documentos e índices de directorio en Nanobook."
 date: 2026-08-28

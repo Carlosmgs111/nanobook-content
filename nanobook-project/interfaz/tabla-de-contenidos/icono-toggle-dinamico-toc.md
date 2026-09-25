@@ -1,4 +1,5 @@
 ---
+id: "cdb59a8a-4ed7-451d-a9f1-5d39462f932b"
 title: "Icono dinámico en el toggle del TOC: renderizar ambos y mostrar según data-toc-mode"
 description: "Estrategia usada para cambiar el icono del botón de modo del TableOfContents sin manipular el DOM con JavaScript: renderizar ambos SVGs y controlar su visibilidad con data attributes y CSS."
 date: 2026-08-04

@@ -1,4 +1,5 @@
 ---
+id: "685490b2-234f-45db-8e05-ef75c4cbd8c0"
 title: Corto plazo
 description: Mejoras inmediatas para cerrar la fase alpha y estabilizar el día a
   día de Nanobook.

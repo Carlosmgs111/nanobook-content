@@ -1,4 +1,5 @@
 ---
+id: "bb063208-c8d5-470b-9566-cf1260520899"
 title: "Módulo de rendering"
 description: "Visión general del módulo src/rendering/: conversión de Markdown a HTML en el navegador usando workers y adapters."
 date: 2026-08-22

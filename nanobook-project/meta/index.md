@@ -1,4 +1,5 @@
 ---
+id: "00258745-b912-4057-899b-163ebefbc5b9"
 title: "Sobre Nanobook"
 description: "Visión general del proyecto, propósito y puntos de entrada para entender dónde estamos y hacia dónde vamos."
 date: 2026-08-21

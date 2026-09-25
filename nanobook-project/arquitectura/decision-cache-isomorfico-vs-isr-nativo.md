@@ -1,4 +1,5 @@
 ---
+id: "289f913a-fb5f-4b0c-a830-07d79a1b9d81"
 title: "Decisión: cache isomórfico en lugar de ISR nativo de plataforma"
 description: "Registro de la decisión de usar un sistema de cache de cuerpos isomórfico en lugar de depender de ISR nativo de Vercel."
 date: 2026-08-24

@@ -1,4 +1,5 @@
 ---
+id: "c799afd6-6080-4bd5-a870-a1696ddd1c66"
 title: "Webhook de GitHub: ubicación y dependencias"
 description: "Decisión de ubicar el caso de uso del webhook de GitHub en publishing y orquestarlo desde Application, con dependencia directa hacia navigation."
 date: 2026-09-11
@@ -69,7 +70,7 @@ src/Application.ts
   ├── PublishingModule.renderedPageCache
   ├── NavigationModule.navigationService
   └── GitHubWebhookHandler(cache, navigationService)
-        └── WebhookController(handler)
+        └── GitHubWebhookController(handler)
 ```
 
 ## Justificación

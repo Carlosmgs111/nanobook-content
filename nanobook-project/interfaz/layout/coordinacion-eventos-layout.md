@@ -1,4 +1,5 @@
 ---
+id: "ddd14638-af30-4d3c-adad-eed38b65bbfa"
 title: "Coordinación de layout mediante eventos: estado actual y posibles mejoras"
 description: "Documentación del enfoque actual para sincronizar Sidebar, TOC y modo de ancho de contenido mediante eventos personalizados, junto con sus ventajas, desventajas y alternativas de mejora."
 date: 2026-08-08

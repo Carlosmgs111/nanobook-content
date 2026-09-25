@@ -1,4 +1,5 @@
 ---
+id: "ce6e1ccd-d041-4a65-91ae-8edfb58020c9"
 title: "Storage adapters"
 description: "Adapters disponibles para ContentRepository y cómo el dominio de Nanobook es agnóstico al almacenamiento."
 date: 2026-08-23

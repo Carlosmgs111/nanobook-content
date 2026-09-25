@@ -1,4 +1,5 @@
 ---
+id: "a8e27a73-fd2e-48f6-a3aa-ef02e58589ef"
 title: Arquitectura del modelo de contenido
 description: Decisión de mantener filesystem-first pero storage-agnostic,
   separando Content Model de Storage, Navigation y Astro como capa de

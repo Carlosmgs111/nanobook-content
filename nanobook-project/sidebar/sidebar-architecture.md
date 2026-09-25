@@ -1,4 +1,5 @@
 ---
+id: "698a6383-5be4-412b-a4d2-a06a8aac395e"
 title: "Plan de refactorización del SidebarNav"
 description: "Resumen de la arquitectura del SidebarNav de nanobook, basada en IDs del DOM."
 date: 2026-08-06

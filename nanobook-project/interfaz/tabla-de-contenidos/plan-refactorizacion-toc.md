@@ -1,4 +1,5 @@
 ---
+id: "0a80fd99-a32d-4e0f-98f1-eed8509db92a"
 title: "Plan de refactorización del TableOfContents"
 description: "Propuesta para reorganizar la lógica JavaScript del TableOfContents de nanobook usando componentes autocontenidos con archivos .logic.ts, siguiendo el mismo enfoque aplicado al SidebarNav."
 date: 2026-08-06

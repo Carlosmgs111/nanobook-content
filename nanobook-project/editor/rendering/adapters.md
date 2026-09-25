@@ -1,4 +1,5 @@
 ---
+id: "68282119-62c4-4b16-9e91-9516e3af8874"
 title: Adapters de rendering
 description: "Los tres adapters que implementan DocumentRenderer en
   src/rendering/adapters/: markdown-it, @astrojs/markdown-remark y unified."

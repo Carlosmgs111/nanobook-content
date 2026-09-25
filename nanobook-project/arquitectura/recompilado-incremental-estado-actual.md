@@ -1,4 +1,5 @@
 ---
+id: "66848a58-bc40-4b07-95f5-066ed0afef9a"
 title: "Recompilado incremental - Estado actual y flujo de trabajo"
 description: "Documentación de las fases completadas del plan de preparación para el grafo de dependencias, arquitectura resultante y flujo de principio a fin para detectar y regenerar contenido de forma incremental."
 date: 2026-08-23

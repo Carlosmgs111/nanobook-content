@@ -1,4 +1,5 @@
 ---
+id: "da7ccec1-c7ea-484e-991e-cb112f747c5d"
 title: "Largo plazo"
 description: "Ideas y direcciones futuras para Nanobook, sin compromiso de implementación inmediata."
 date: 2026-08-21

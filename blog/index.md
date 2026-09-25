@@ -1,4 +1,5 @@
 ---
+id: "8cce194e-6049-443b-aaf2-4f3a1d1a5b14"
 title: "Blog"
 description: "Artículos y reflexiones."
 date: 2026-07-30

@@ -1,4 +1,5 @@
 ---
+id: "38cbdc10-988c-4248-b473-a1e74ec2c574"
 title: "Guía de Markdown"
 description: "Referencia completa de Markdown para escribir contenido en Nanobook, incluyendo sintaxis básica, frontmatter, enlaces internos y Markmap."
 date: 2026-08-21

@@ -1,4 +1,5 @@
 ---
+id: "f0a2e86e-6e3d-4233-afd8-0603d9b5008b"
 title: "Plan de refactorización: estructura y organización de módulos"
 description: Roadmap de refactorización incremental para reorganizar el código fuente de Nanobook para una arquitectura modular y escalable.
 date: 2026-08-23

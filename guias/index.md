@@ -1,4 +1,5 @@
 ---
+id: "aae58be3-bfc1-440a-9541-e49fd28be622"
 title: "Guías"
 description: "Referencias y guías rápidas sobre Markdown, sintaxis y herramientas útiles."
 date: 2026-08-21

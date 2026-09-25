@@ -1,4 +1,5 @@
 ---
+id: "6c92b0c6-4e3d-4a59-9a66-972ba8c94319"
 title: "Despliegue en Vercel"
 description: "Guía de despliegue de Nanobook en Vercel con SSR puro y cache isomórfico"
 date: 2026-08-25

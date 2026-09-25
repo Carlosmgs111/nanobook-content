@@ -1,4 +1,5 @@
 ---
+id: "d736f0a4-775d-4ea8-9542-1313f177769d"
 title: "Documentos proxy"
 description: "Cómo funciona el sistema de referencias `ref` para crear documentos que reflejan el contenido de otros documentos internos, locales o de proyectos ajenos."
 date: 2026-08-23

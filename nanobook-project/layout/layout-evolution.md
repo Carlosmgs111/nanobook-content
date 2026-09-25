@@ -1,4 +1,5 @@
 ---
+id: "6e5d22bc-796a-4859-9307-4e7757e3b52e"
 title: "Evolución del layout principal: de Grid a Flex y mejora del TOC"
 description: "Análisis de la migración del layout principal de nanobook de CSS Grid a Flexbox, junto con la evolución del componente TableOfContents y la gestión de estado mediante data attributes."
 date: 2026-08-04

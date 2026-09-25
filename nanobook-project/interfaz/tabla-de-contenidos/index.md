@@ -1,4 +1,5 @@
 ---
+id: "d91319bc-6b61-4348-b8f7-e4269b0bd285"
 title: "Table of Contents"
 description: "Arquitectura, rendimiento y evolución del componente TableOfContents."
 date: 2026-08-13

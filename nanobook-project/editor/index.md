@@ -1,4 +1,5 @@
 ---
+id: "a5f23d30-6c86-4917-838e-0681c26d7624"
 title: "Editor"
 description: "Documentación del editor integrado y el flujo de preview en Nanobook."
 date: 2026-08-19

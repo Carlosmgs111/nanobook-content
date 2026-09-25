@@ -1,4 +1,5 @@
 ---
+id: "dbc9b11b-9df7-4728-889b-5ea5472023c2"
 title: "API de navegación"
 description: "Documentación de la API de NavigationBuilder: funciones disponibles, contratos, ejemplos de uso y por qué vive separada del repositorio de contenido."
 date: 2026-08-23

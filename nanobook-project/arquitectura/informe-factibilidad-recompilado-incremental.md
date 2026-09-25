@@ -1,4 +1,5 @@
 ---
+id: "ce0b4f19-afa7-4fbf-b1d5-696e3c8afeaa"
 title: "Informe de factibilidad - Recompilado incremental"
 description: "Análisis de qué tan viable es implementar recompilado incremental en Nanobook en función de la estructura del árbol de documentos y el estado actual del sistema de build."
 date: 2026-08-23

@@ -1,4 +1,5 @@
 ---
+id: "3f1561eb-351a-4243-9427-ecc20c3d7af7"
 title: "Plan de componetización del TableOfContents"
 description: "Propuesta para dividir el componente TableOfContents de nanobook en subcomponentes más pequeños, manteniendo la lógica de estado declarativa y los scripts inline de Astro."
 date: 2026-08-04
