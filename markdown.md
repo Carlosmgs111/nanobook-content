@@ -11,7 +11,7 @@ position: 0
 proxyTargetId: null
 ---
 
-# Arquitectura de componentes basada en IDs 25.0
+# Arquitectura de componentes basada en IDs 27.0
 
 ## Resumen
 
